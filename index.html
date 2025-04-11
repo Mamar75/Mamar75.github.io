@@ -12,17 +12,24 @@
     color: #333;
   }
 
-  header {
-    background-color: #004d7a; /* Deep blue */
-    color: white;
-    padding: 1.2em 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+header {
+  background-color: #004d7a; /* Optional: dark blue background */
+  color: white;
+  padding: 2em 20px;
+  text-align: center; /* Center everything inside header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-  header h1 {
-    margin: 0;
-    font-size: 2em;
-  }
+.site-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.subtitle {
+  margin: 0.2em 0 0;
+  font-size: 1.2em;
+  font-weight: 300;
+}
 
   main {
     max-width: 950px;
@@ -66,18 +73,18 @@
     color: #666;
     text-align: center;
   }
+
 </style>
 <body>
-  <header>
+<header>
+  <div class="site-header">
     <h1>Marius Savatier</h1>
-  </header>
-
-  <main>
     <p class="subtitle">
-  PhD Candidate in Finance<br>
-  <span style="font-variant: small-caps;">Université Paris Dauphine–PSL</span>
-</p>
-
+      PhD Candidate in Finance<br>
+      <span style="font-variant: small-caps;">Université Paris Dauphine–PSL</span>
+    </p>
+  </div>
+</header>
 
     <h2>Contact</h2>
     <p>Email (academic): <a href="mailto:marius.savatier@dauphine.psl.eu">marius.savatier@dauphine.psl.eu</a></p>
