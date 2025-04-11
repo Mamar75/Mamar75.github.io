@@ -4,16 +4,18 @@
   <meta charset="UTF-8">
   <title>Marius – Academic Homepage</title>
 <style>
+  /* Global body settings: increased font size and line spacing for main content */
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    font-size: 18px; /* Increased base font size */
-    line-height: 1.8; /* Increased line spacing */
+    font-size: 22px;         /* Increased base font size */
+    line-height: 2;          /* Increased line spacing */
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
   }
 
+  /* Header settings remain fixed */
   header {
     background-color: #004d7a;
     color: white;
@@ -22,17 +24,19 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
+  /* Fixed header typography using pixel values to avoid scaling with body font size */
   .site-header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 45px; /* Fixed size for header title */
   }
 
   .subtitle {
     margin: 0.4em 0 0;
-    font-size: 1.2em;
+    font-size: 18px; /* Fixed size for header subtitle */
     font-weight: 300;
   }
 
+  /* Main content box: widened, centered, with justified text */
   main {
     max-width: 1000px;
     margin: 40px auto;
