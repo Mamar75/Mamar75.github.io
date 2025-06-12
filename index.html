@@ -22,6 +22,8 @@
     background-color: #f9f9f9;
     color: #333;
   }
+
+  /* links stay blue, nothing else */
   a {
     color: #007acc;
     text-decoration: none;
@@ -34,28 +36,34 @@
 
   /* — Header — */
   header {
-    background: none;                 /* no colored banner */
-    border-bottom: 1px solid #e0e0e0; /* subtle separator */
+    background: none;
+    border-bottom: 1px solid #e0e0e0;
     padding: 1.5em 20px;
     max-width: 1000px;
-    margin: 0 auto 2em auto;
+    margin: 0 auto 2em;
   }
+
   .header-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
   .header-top h1 {
     margin: 0;
-    font-size: 3em;       /* large name */
+    font-size: 3em;      /* keeps your name large */
     line-height: 1;
+    color: #333;         /* force title black */
   }
+
   .header-top img {
-    max-width: 200px;     /* large photo */
+    max-width: 250px;    /* make the picture bigger */
     border-radius: 8px;
     margin-left: 30px;
+    margin-top: 15px;    /* nudge it down a bit */
   }
+
   .subtitle {
     margin: 0.5em 0 0;
     font-size: 1.3em;
@@ -67,15 +75,17 @@
   /* — Main content & headings — */
   main {
     max-width: 1000px;
-    margin: 0 auto 3em auto;
+    margin: 0 auto 3em;
     padding: 2em;
     background-color: #fff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
     text-align: justify;
   }
+
+  /* force all section titles black */
   h2 {
-    color: #004d7a;
+    color: #333;
     margin-top: 2em;
     font-size: 1.4em;
   }
@@ -83,14 +93,13 @@
   /* — Footer — */
   footer {
     max-width: 1000px;
-    margin: 0 auto 2em auto;
+    margin: 0 auto 2em;
     padding: 1em 20px;
     font-size: 0.9em;
     color: #666;
     text-align: center;
   }
 </style>
-
 <body>
   <header>
     <div class="header-top">
