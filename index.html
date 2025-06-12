@@ -3,111 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <title>M. Savatier – Academic Homepage</title>
-    <!-- Favicon and related files -->
-<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-<link rel="shortcut icon" href="/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-<link rel="manifest" href="/favicon/site.webmanifest" />
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
 
-  
-<style>
-  /* — Base page styles — */
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.8;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-  }
+  <style>
+    /* — Base page styles — */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    a:hover {
+      color: #004d7a;
+      text-decoration: underline;
+    }
 
-  /* links stay blue, nothing else */
-  a {
-    color: #007acc;
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-  a:hover {
-    color: #004d7a;
-    text-decoration: underline;
-  }
+    /* — Header — */
+    header {
+      background: none;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1.5em 20px;
+      max-width: 1000px;
+      margin: 0 auto 2em;
+    }
+    .header-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .name-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .header-top h1 {
+      margin: 0;
+      font-size: 3em;
+      line-height: 1;
+      color: #333;
+    }
+    .header-top img {
+      max-width: 250px;
+      border-radius: 8px;
+      margin-top: 15px;
+      height: auto;
+    }
+    .subtitle {
+      margin: 0.1em 0 0;
+      font-size: 1.3em;
+      font-weight: 300;
+      color: #555;
+      text-align: left;
+    }
 
-  /* — Header — */
-  header {
-    background: none;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 1.5em 20px;
-    max-width: 1000px;
-    margin: 0 auto 2em;
-  }
+    /* — Main content & headings — */
+    main {
+      max-width: 1000px;
+      margin: 0 auto 3em;
+      padding: 2em;
+      background-color: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      text-align: justify;
+    }
+    h2 {
+      color: #333;
+      margin-top: 2em;
+      font-size: 1.4em;
+    }
 
-  .header-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .header-top h1 {
-    margin: 0;
-    font-size: 3em;      /* keeps your name large */
-    line-height: 1;
-    color: #333;         /* force title black */
-  }
-
-.header-top img {
-  max-width: 250px !important;
-  height: auto !important;
-}
-
-/* 2) Nudge the subtitle right up under the header-top */
-.header-top {
-  margin-bottom: 0.1em !important;
-}
-.subtitle {
-  margin-top: 0 !important;
-}
-
-  /* — Main content & headings — */
-  main {
-    max-width: 1000px;
-    margin: 0 auto 3em;
-    padding: 2em;
-    background-color: #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
-    text-align: justify;
-  }
-
-  /* force all section titles black */
-  h2 {
-    color: #333;
-    margin-top: 2em;
-    font-size: 1.4em;
-  }
-
-  /* — Footer — */
-  footer {
-    max-width: 1000px;
-    margin: 0 auto 2em;
-    padding: 1em 20px;
-    font-size: 0.9em;
-    color: #666;
-    text-align: center;
-  }
-</style>
+    /* — Footer — */
+    footer {
+      max-width: 1000px;
+      margin: 0 auto 2em;
+      padding: 1em 20px;
+      font-size: 0.9em;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
 <body>
+
   <header>
     <div class="header-top">
-      <h1>Marius Savatier</h1>
+      <div class="name-block">
+        <h1>Marius Savatier</h1>
+        <p class="subtitle">
+          PhD Candidate in Finance<br>
+          <span style="font-variant: small-caps;">Université Paris Dauphine–PSL</span>
+        </p>
+      </div>
       <img src="Photo.PNG" alt="Marius Savatier">
     </div>
-    <p class="subtitle">
-      PhD Candidate in Finance<br>
-      <span style="font-variant: small-caps;">Université Paris Dauphine–PSL</span>
-    </p>
   </header>
 <body>
 <main>
