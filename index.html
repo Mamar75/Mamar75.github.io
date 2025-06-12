@@ -11,102 +11,96 @@
 <link rel="manifest" href="/favicon/site.webmanifest" />
 
   
-<style>
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    font-size: 18px; /* Increased base font size */
-    line-height: 1.8; /* Increased line spacing */
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-  }
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
 
-  header {
-    background-color: #004d7a;
-    color: white;
-    padding: 2em 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 1000px;
-    margin: 0 auto;
-  }
+    header {
+      background-color: #004d7a;
+      color: white;
+      padding: 2em 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 1000px;
+      margin: 0 auto;
+    }
 
-  .site-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-  }
+    .site-header {
+      /* simple block container */
+    }
 
-  .subtitle {
-    margin: 0.4em 0 0;
-    font-size: 1.2em;
-    font-weight: 300;
-  }
+    /* NEW: flex only the top row (name + photo) */
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* if you want a little breathing room on narrow screens: */
+      flex-wrap: wrap;
+    }
 
-  .site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+    .site-header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
 
-  main {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 2em;
-    background-color: #ffffff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
-    text-align: justify;
-  }
+    .subtitle {
+      margin: 0.4em 0 0;
+      font-size: 1.2em;
+      font-weight: 300;
+      text-align: left; /* ensure subtitle is left-align under the name */
+    }
 
-  main p {
-    margin-bottom: 1.2em;
-  }
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 2em;
+      background-color: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      text-align: justify;
+    }
 
-  h2 {
-    font-size: 1.4em;
-    margin-top: 2em;
-    color: #004d7a;
-  }
+    /* … your other styles … */
 
-  ul {
-    padding-left: 1.2em;
-  }
-
-  li {
-    margin-bottom: 0.6em;
-  }
-
-  a {
-    color: #007acc;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  footer {
-    margin: 3em auto;
-    max-width: 1000px;
-    padding: 1em 20px;
-    font-size: 0.9em;
-    color: #666;
-    text-align: center;
-  }
-</style>
+    footer {
+      margin: 3em auto;
+      max-width: 1000px;
+      padding: 1em 20px;
+      font-size: 0.9em;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
 
 <body>
-<div class="site-header">
-  <div class="header-top">
-    <h1>Marius Savatier</h1>
-    <img src="Photo.PNG" alt="Marius Savatier" style="max-width: 150px; border-radius: 8px; margin-left: 30px;">
-  </div>
-  <p class="subtitle">
-    PhD Candidate in Finance<br>
-    <span style="font-variant: small-caps;">Université Paris Dauphine–PSL</span>
-  </p>
-</div>
+  <header>
+    <div class="site-header">
+
+      <!-- name + photo on one line -->
+      <div class="header-top">
+        <h1>Marius Savatier</h1>
+        <img
+          src="Photo.PNG"
+          alt="Marius Savatier"
+          style="max-width:150px; border-radius:8px; margin-left:30px;"
+        >
+      </div>
+
+      <!-- subtitle below the name -->
+      <p class="subtitle">
+        PhD Candidate in Finance<br>
+        <span style="font-variant: small-caps;">Université Paris Dauphine–PSL</span>
+      </p>
+
+    </div>
+  </header>
 <main>
     <h2>Contact</h2>
     <p>Email: <a href="mailto:marius.savatier@dauphine.psl.eu">marius.savatier@dauphine.psl.eu</a></p>
