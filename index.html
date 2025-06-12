@@ -57,20 +57,18 @@
     color: #333;         /* force title black */
   }
 
-  .header-top img {
-    max-width: 250px;    /* make the picture bigger */
-    border-radius: 8px;
-    margin-left: 30px;
-    margin-top: 15px;    /* nudge it down a bit */
-  }
+.header-top img {
+  max-width: 250px !important;
+  height: auto !important;
+}
 
-  .subtitle {
-    margin: 0.1em 0 0 !important;  /* pull it right up under your name */
-    font-size: 1.3em;
-    font-weight: 300;
-    color: #555;
-    text-align: left;
-  }
+/* 2) Nudge the subtitle right up under the header-top */
+.header-top {
+  margin-bottom: 0.1em !important;
+}
+.subtitle {
+  margin-top: 0 !important;
+}
 
   /* — Main content & headings — */
   main {
