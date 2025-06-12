@@ -41,6 +41,13 @@
     font-weight: 300;
   }
 
+  .site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
   main {
     max-width: 1000px;
     margin: 40px auto;
@@ -89,19 +96,19 @@
 </style>
 
 <body>
-<header>
-  <div class="site-header">
+<div class="site-header">
+  <div class="text-block">
     <h1>Marius Savatier</h1>
     <p class="subtitle">
       PhD Candidate in Finance<br>
       <span style="font-variant: small-caps;">Université Paris Dauphine–PSL</span>
     </p>
-    
-    <!-- Add your photo here -->
-    <img src="Photo.PNG" alt="Marius Savatier" style="max-width: 200px; border-radius: 8px; margin-top: 20px;">
-    
   </div>
-</header>
+  
+  <div class="photo-block">
+    <img src="Photo.PNG" alt="Marius Savatier" style="max-width: 200px; border-radius: 8px;">
+  </div>
+</div>
 <main>
     <h2>Contact</h2>
     <p>Email: <a href="mailto:marius.savatier@dauphine.psl.eu">marius.savatier@dauphine.psl.eu</a></p>
